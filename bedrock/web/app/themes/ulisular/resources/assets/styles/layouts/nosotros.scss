@@ -1,0 +1,51 @@
+.nosotros {
+  height: auto;
+  margin: 95px auto;
+  width: 90%;
+
+  .nosotros-frase {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+    .raya {
+      border: 2px solid red;
+      margin: 20px auto 28px auto;
+      width: 170px;
+    }
+  }
+
+  .content-nosotros {
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 600 !important;
+    }
+
+    .titulos-content,
+    .quehacemos-content,
+    .porquehacemos-content,
+    .quequeremos-content {
+      max-width: 1200px;
+      margin: 95px auto;
+
+      .quehacemos,
+      .porquehacemos,
+      .quequeremos {
+        text-decoration: none !important;
+        color: #e1e5db;
+        font-size: 18px !important;
+        font-weight: 800 !important;
+        letter-spacing: 2.5px !important;
+
+        &.active {
+          color: red !important;
+        }
+      }
+    }
+  }
+}

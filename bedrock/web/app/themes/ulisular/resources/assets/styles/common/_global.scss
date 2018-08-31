@@ -16,11 +16,11 @@ h3 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 a {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .main-view {
@@ -63,4 +63,9 @@ a {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.svg {
+  position: absolute;
+  bottom: -60px;
 }
