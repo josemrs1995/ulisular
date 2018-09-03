@@ -15,37 +15,46 @@
     }
   }
 
-  .content-nosotros {
-    position: relative;
-    height: 100vh;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  .quehacemos,
+  .porquehacemos,
+  .quequeremos {
+    text-decoration: none !important;
+    color: #e1e5db;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2.5px !important;
 
-    h1 {
-      font-weight: 600 !important;
+    &.active {
+      color: red !important;
     }
+  }
 
-    .titulos-content,
-    .quehacemos-content,
-    .porquehacemos-content,
-    .quequeremos-content {
-      max-width: 1200px;
-      margin: 95px auto;
+  .content-nosotros {
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
 
-      .quehacemos,
-      .porquehacemos,
-      .quequeremos {
-        text-decoration: none !important;
-        color: #e1e5db;
-        font-size: 18px !important;
-        font-weight: 800 !important;
-        letter-spacing: 2.5px !important;
+    .caja-content {
+      position: relative;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 60px 50px 50px 0;
 
-        &.active {
-          color: red !important;
-        }
+      h1 {
+        font-weight: 600 !important;
       }
+    }
+  }
+
+  .img {
+    position: relative;
+    text-align: right;
+
+    .img-1 {
+      position: relative;
+      height: auto;
+      width: 400px;
     }
   }
 }

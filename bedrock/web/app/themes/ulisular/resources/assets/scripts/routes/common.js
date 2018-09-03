@@ -2,26 +2,28 @@ export default {
   init() {
     // JavaScript to be fired on all pages
         /////
+        $('.porquehacemos-content,.quequeremos-content').fadeOut();
+        
         $('.quehacemos').click(function (e) { 
           e.preventDefault();
           $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
           $(this).addClass('active');
-          $('.quehacemos,.porquehacemos,.quequeremos').fadeOut();
-          $('.quehacemos').fadeIn();
+          $('.porquehacemos-content,.quequeremos-content').fadeOut();
+          $('.quehacemos-content').fadeIn();
       });
       $('.porquehacemos').click(function (e) { 
           e.preventDefault();
-          $('.quehacemos,.quequeremos').removeClass('active');
+          $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
           $(this).addClass('active');
-          $('.quehacemos,.porquehacemos,.quequeremos').fadeOut();
-          $('.porquehacemos').fadeIn();
+          $('.quehacemos-content,.quequeremos-content').fadeOut();
+          $('.porquehacemos-content').fadeIn();
       });
       $('.quequeremos').click(function (e) { 
           e.preventDefault();
-          $('.quehacemos,.porquehacemos').removeClass('active');
+          $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
           $(this).addClass('active');
-          $('.quehacemos,.porquehacemos,.quequeremos').fadeOut();
-          $('.quequeremos').fadeIn();
+          $('.quehacemos-content,.porquehacemos-content').fadeOut();
+          $('.quequeremos-content').fadeIn();
       });
 
       //$('selector').document.getElmentById('div')
