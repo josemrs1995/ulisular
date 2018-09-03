@@ -31,4 +31,5 @@
     </div>
 </div>
 @include('partials.nosotros')
+@include('partials.procesos-contrataciones')
 @endsection
