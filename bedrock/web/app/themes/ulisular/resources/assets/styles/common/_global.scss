@@ -69,3 +69,118 @@ a {
   position: absolute;
   bottom: -60px;
 }
+
+footer {
+  display: block;
+  width: 100% !important;
+  height: 80% !important;
+  position: relative !important;
+
+  .svg-footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  li {
+    margin: 5px;
+  }
+
+  .content-footer {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+
+    .menu-footer {
+      .logo {
+        height: 50px;
+        width: auto;
+        margin-bottom: 20px;
+      }
+    }
+
+    .contactanos-correo {
+      background: white;
+      border-top-left-radius: 26px;
+      border-top-right-radius: 26px;
+      position: absolute;
+      height: 77vh;
+      right: 50px;
+      top: 20px;
+      padding: 5%;
+      text-align: center;
+    }
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      input {
+        background: #f2f2f2;
+        border: none;
+        display: block;
+        padding: 10px 7px;
+        margin: 10px 12px;
+        width: 100%;
+        border-radius: 50px;
+      }
+
+      .boton-footer {
+        background: red;
+        padding: 10px 26px;
+        border-radius: 40px;
+        color: white !important;
+        display: inline-block;
+        margin-top: 15px;
+        font-weight: 600;
+        position: relative;
+      }
+
+      textarea {
+        background: #f2f2f2;
+        border: none;
+        display: block;
+        padding: 10px 7px;
+        margin: 10px 12px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 50px;
+      }
+
+      ::placeholder {
+        color: #000;
+      }
+
+      textarea:focus,
+      input:focus {
+        outline: none;
+      }
+    }
+
+    .copy {
+      font-size: 8px;
+      letter-spacing: 5px;
+
+      .p {
+        width: 100%;
+        text-align: center;
+        left: 0 !important;
+      }
+    }
+  }
+}

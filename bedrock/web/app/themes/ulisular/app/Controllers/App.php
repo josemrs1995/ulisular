@@ -51,4 +51,24 @@ class App extends Controller
             ];
         }, $servicios);
     }
+
+    function procesosLoop()
+    {
+        $procesos= get_posts([
+            'post_type' => 'post',
+        ]);
+ 
+        return array_map(function ($post) {
+            return [
+                'thumbnail' => get_the_post_thumbnail_url($post->ID, 'large'),
+                'title' => get_the_title($post->ID),
+                'resumen' =>apply_filters( 'the_excerpt',get_the_excerpt($post->ID) ),
+                'link' => get_permalink($post->ID),
+                'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
+                'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
+                'tags' => get_tags($post->ID),
+                'date' => get_the_date( 'l F j, Y', $post->ID ) 
+            ];
+        }, $procesos);
+    }
 }
