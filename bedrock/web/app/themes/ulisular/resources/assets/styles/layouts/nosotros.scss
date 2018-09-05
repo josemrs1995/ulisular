@@ -7,6 +7,8 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
+    min-width: 270px;
+    max-width: 500px;
 
     .raya {
       border: 2px solid red;
@@ -29,10 +31,25 @@
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    .quehacemos,
+    .porquehacemos,
+    .quequeremos {
+      display: none;
+    }
+
+    .quehacemos-content,
+    .porquehacemos-content,
+    .quequeremos-content {
+      position: relative !important;
+    }
+  }
+
   .content-nosotros {
     width: 90%;
-    height: 50vh;
     margin: 0 auto;
+    min-width: 270px;
+    max-width: 1200px;
 
     .caja-content {
       position: relative;

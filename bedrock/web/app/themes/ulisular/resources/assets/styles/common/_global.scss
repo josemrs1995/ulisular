@@ -1,6 +1,7 @@
 html,
 body {
   height: 100% !important;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -40,6 +41,8 @@ a {
       width: 40%;
       left: 7%;
       transform: translateY(-50%);
+      min-width: 270px;
+      max-width: 500px;
 
       h1 {
         font-weight: 800;
@@ -82,6 +85,7 @@ footer {
     height: auto;
     bottom: 0;
     z-index: -1;
+    min-width: 1200px;
   }
 
   a {
@@ -101,11 +105,17 @@ footer {
   }
 
   .content-footer {
-    position: relative;
-    width: 90%;
+    display: block;
+    text-align: center;
+    width: 95%;
     margin: 0 auto;
 
     .menu-footer {
+      display: inline-block;
+      text-align: left;
+      width: 40%;
+      position: relative;
+
       .logo {
         height: 50px;
         width: auto;
@@ -117,20 +127,49 @@ footer {
       background: white;
       border-top-left-radius: 26px;
       border-top-right-radius: 26px;
-      position: absolute;
-      height: 77vh;
-      right: 50px;
+      position: relative;
       top: 20px;
       padding: 5%;
       text-align: center;
+      max-width: 650px;
+      display: inline-block;
+    }
+
+    .contactanos {
+      margin-top: 25px;
+
+      .img-footer {
+        height: 101px;
+        width: 213px;
+        display: flex;
+        margin-top: 25px;
+      }
+
+      .p-contactanos {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+
+      .p-contactanos-reserved {
+        color: #fff;
+        font-size: 9px;
+        letter-spacing: 2px;
+      }
+
+      a {
+        margin-right: 10px;
+      }
     }
 
     .formulario {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
 
-      input {
+      input[type=text],
+      input[type=email] {
         background: #f2f2f2;
         border: none;
         display: block;
@@ -141,14 +180,17 @@ footer {
       }
 
       .boton-footer {
-        background: red;
-        padding: 10px 26px;
-        border-radius: 40px;
-        color: white !important;
-        display: inline-block;
-        margin-top: 15px;
+        border: solid 2px red;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 10px;
+        width: 100px;
+        color: white;
         font-weight: 600;
-        position: relative;
+        background: red;
+        border-radius: 50px;
+        margin-top: 15px;
       }
 
       textarea {

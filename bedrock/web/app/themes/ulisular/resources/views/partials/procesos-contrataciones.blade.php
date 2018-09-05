@@ -12,7 +12,7 @@
             </div>
         <a href="{{$procesos['link']}}">
             <div class="caja-procesos columns is-12">
-                <div class="img-noticias column is-5" style="background:url('{{$procesos['thumbnail']}}'); background-size:cover; "></div>
+                <div class="img-noticias column is-5" style="background:url('{{$procesos['thumbnail']}}'); background-size:cover;"></div>
                 <div class="content-procesos column is-7">
                     <h2 class="titulo">{{$procesos['title']}}</h2>
                     <p class="resumen">{!! $procesos['resumen'] !!}</p>

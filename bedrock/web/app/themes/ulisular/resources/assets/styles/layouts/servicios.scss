@@ -5,15 +5,16 @@
   width: 100%;
   text-align: center;
   margin: 0;
+  height: auto;
 
   .orden-items-servicios {
     margin: 15px;
   }
 
   .servicio-item {
+    max-width: 500px;
     min-width: 270px;
     width: 18%;
-    max-width: 250px;
     display: inline-block !important;
     position: relative;
     text-align: left;

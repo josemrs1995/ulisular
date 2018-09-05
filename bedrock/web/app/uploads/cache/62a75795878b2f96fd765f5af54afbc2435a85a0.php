@@ -12,7 +12,7 @@
             </div>
         <a href="<?php echo e($procesos['link']); ?>">
             <div class="caja-procesos columns is-12">
-                <div class="img-noticias column is-5" style="background:url('<?php echo e($procesos['thumbnail']); ?>'); background-size:cover; "></div>
+                <div class="img-noticias column is-5" style="background:url('<?php echo e($procesos['thumbnail']); ?>'); background-size:cover;"></div>
                 <div class="content-procesos column is-7">
                     <h2 class="titulo"><?php echo e($procesos['title']); ?></h2>
                     <p class="resumen"><?php echo $procesos['resumen']; ?></p>
