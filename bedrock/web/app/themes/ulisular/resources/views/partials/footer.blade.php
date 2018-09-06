@@ -1,5 +1,7 @@
 <footer class="content-info">
+  <div class="svg-over">
   <img class="svg-footer" src="@asset('images/svg/vector-02r.svg')" style="width:100%; height:auto; " >
+  </div>
   <div class="content-footer columns">
     <div class="menu-footer column is-3">
       <img class="logo" src="@asset('images/logo-01.png')" style="width:100px; height:auto; " >

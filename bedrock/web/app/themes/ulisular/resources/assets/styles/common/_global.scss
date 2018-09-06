@@ -1,7 +1,12 @@
+html {
+  overflow-y: unset;
+}
+
 html,
 body {
   height: 100% !important;
-  overflow-x: hidden;
+  position: relative;
+  overflow-x: hidden !important;
 }
 
 h1 {
@@ -76,16 +81,18 @@ a {
 footer {
   display: block;
   width: 100% !important;
-  height: 80% !important;
+  height: auto !important;
   position: relative !important;
 
-  .svg-footer {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    z-index: -1;
-    min-width: 1200px;
+  .svg-over {
+    .svg-footer {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      z-index: -1;
+      min-width: 1200px;
+    }
   }
 
   a {
@@ -128,7 +135,7 @@ footer {
       border-top-left-radius: 26px;
       border-top-right-radius: 26px;
       position: relative;
-      top: 20px;
+      margin-top: 20px;
       padding: 5%;
       text-align: center;
       max-width: 650px;
@@ -223,6 +230,26 @@ footer {
         text-align: center;
         left: 0 !important;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .svg-over {
+    .svg-footer {
+      height: 350vh !important;
+    }
+  }
+
+  .contactanos {
+    .img-footer {
+      margin: 25px -31px !important;
+    }
+  }
+
+  .content-footer {
+    .menu-footer {
+      text-align: center !important;
     }
   }
 }

@@ -1,6 +1,11 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
+    $('.navbar-burger').click(function (e) { 
+        e.preventDefault();
+        $('.navbar-burger').toggleClass('is-active');
+        $('.menu-responsive').fadeToggle();
+      });
         /////
         $('.porquehacemos-content,.quequeremos-content').fadeOut();
         

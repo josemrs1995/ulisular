@@ -1,3 +1,4 @@
+@include('partials.mobilemenu')
 <header class="banner">
     <nav class="nav-primary">
       <a href="{{home_url('/')}}"><img class="logo" src="@asset('images/logo-02.png')"></a>
@@ -6,3 +7,8 @@
       @endif
     </nav>
 </header>
+<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
