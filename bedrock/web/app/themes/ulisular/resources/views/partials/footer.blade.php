@@ -15,8 +15,7 @@
           <a href=""><img src="@asset('images/icon-instagram.png')"></a>
           <a href=""><img src="@asset('images/icon-twitter.png')"></a>
         </div>
-        <p class="p-contactanos-reserved"> COPYRIGHT - © 2018 ULISULARTOURS.COM</p>
-        <p class="p-contactanos-reserved"> ALL RIGHTS RESERVED</p>
+        <p class="p-contactanos-reserved"> COPYRIGHT - © 2018 ULISULARTOURS.COM ALL RIGHTS RESERVED</p>
       </div>
     </div>
     <div class="contactanos-correo column is-7">

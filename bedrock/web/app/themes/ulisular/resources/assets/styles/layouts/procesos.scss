@@ -41,7 +41,7 @@
   /* timeline */
 
   .barra-vertical {
-    width: 5px;
+    width: 3px;
     position: absolute;
     height: 100%;
     background: red;
@@ -82,19 +82,19 @@
       .rombo {
         border: solid 2px red;
         background: red;
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         transform: translate(-50%, -50%);
         border-radius: 50px;
         left: 50%;
-        top: 50%;
+        top: 110%;
         position: absolute;
       }
     }
 
     &:nth-of-type(2n+1) {
       padding: 0 0 0 10%;
-      margin: 125px 0;
+      margin-top: 200px;
 
       .date {
         right: inherit;
@@ -140,7 +140,7 @@
 
     &:nth-of-type(2n+1) {
       padding: 0 10% 0 10% !important;
-      margin: 0 auto;
+      margin-top: 50px !important;
     }
   }
 

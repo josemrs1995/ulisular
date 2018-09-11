@@ -30,6 +30,14 @@ ul#menu-menu-1 {
   align-items: center;
   height: auto;
   padding: 20px;
+
+  li {
+    padding: 20px;
+  }
+
+  li:hover {
+    color: red;
+  }
 }
 
 .navbar-burger {
@@ -73,14 +81,6 @@ ul#menu-menu-1 {
   height: auto;
   align-content: center;
   margin-left: 40px;
-}
-
-li {
-  padding: 20px;
-}
-
-li:hover {
-  color: red;
 }
 
 @media only screen and (max-width: 1023px) {
