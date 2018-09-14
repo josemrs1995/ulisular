@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
-    <div class="fondo"  style="background: url(<?php echo e(get_field('imagen_header', 'options')); ?>); background-position: center center; background-size: cover; background-repeat: no-repeat;" >
-            <img class="svg" src="<?= App\asset_path('images/svg/vector-01.svg'); ?>" style="width:auto; height:100vh; " >    
+    <div class="fondo"  style="background: url(<?php echo e(get_field('imagen_header', 'options')); ?>); background-position: center center; background-size: cover; background-repeat: no-repeat;" >  
+        <img class="svg" src="<?= App\asset_path('images/svg/vector-01.svg'); ?>" style="width:100%; height:auto; " >     
         <div class="portada">
             <h3><?php echo e(get_field('frase_header', 'option')); ?></h3>
             <H1><?php echo e(get_field('titulo_header', 'option')); ?></H1>

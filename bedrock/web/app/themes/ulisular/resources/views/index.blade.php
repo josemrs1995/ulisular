@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="fondo"  style="background: url({{ get_field('imagen_header', 'options') }}); background-position: center center; background-size: cover; background-repeat: no-repeat;" >
-            <img class="svg" src="@asset('images/svg/vector-01.svg')" style="width:auto; height:100vh; " >    
+    <div class="fondo"  style="background: url({{ get_field('imagen_header', 'options') }}); background-position: center center; background-size: cover; background-repeat: no-repeat;" >  
+        <img class="svg" src="@asset('images/svg/vector-01.svg')" style="width:100%; height:auto; " >     
         <div class="portada">
             <h3>{{ get_field('frase_header', 'option')}}</h3>
             <H1>{{ get_field('titulo_header', 'option')}}</H1>

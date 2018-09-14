@@ -1,6 +1,8 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
+    $('body').removeClass('nosotros');
+
     $('.navbar-burger').click(function (e) { 
         e.preventDefault();
         $('.navbar-burger').toggleClass('is-active');

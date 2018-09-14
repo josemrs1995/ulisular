@@ -6,6 +6,7 @@
   text-align: center;
   margin: 0;
   height: auto;
+  top: -20vh;
 
   .orden-items-servicios {
     margin: 25px 25px 25px 25px;
@@ -54,4 +55,10 @@
   border: 2px solid red;
   margin: 14px 0 14px 0;
   width: 170px;
+}
+
+@media only screen and (max-width: 769px) {
+  .servicios {
+    top: 0 !important;
+  }
 }
