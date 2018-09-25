@@ -1,0 +1,47 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.nav-primary {
+  display: flex;
+  height: 81px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  border: none;
+  padding: 0 25px;
+  background: white;
+
+  //background: transparent;
+}
+
+.nav {
+  background: transparent;
+  text-transform: uppercase;
+
+  .menu-item a {
+    color: black !important;
+  }
+
+  .menu-iniciar-sesion {
+    a {
+      background: red;
+      padding: 8px 20px;
+      border-radius: 50px;
+      color: white !important;
+    }
+  }
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* .nav li a:not(.button), a.nav-item:not(.button) {
+  color: white;
+  height: 0px;
+} */
+
