@@ -9,11 +9,6 @@
         <div class="barba-container">
         @include('partials.header')
         @yield('content')
-        @if (App\display_sidebar())
-            <aside class="sidebar">
-                @include('partials.sidebar')
-            </aside>
-        @endif
         </div>
     </div>    
 </div>
