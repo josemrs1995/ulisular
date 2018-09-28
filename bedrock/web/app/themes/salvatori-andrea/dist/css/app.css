@@ -3649,6 +3649,41 @@ a {
   height: 120vh;
 }
 
+.fondo .page-header .contenido-page-header {
+  width: auto;
+  min-width: 270px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.fondo .page-header .contenido-page-header h1.page-header-h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 15px 0;
+  margin-bottom: 15px;
+}
+
+.fondo .page-header .contenido-page-header h1.page-header-h1::before {
+  content: '';
+  width: 80%;
+  height: 5px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .fondo .portada {
   color: #fff !important;
   position: absolute;
@@ -17690,8 +17725,8 @@ label.panel-block:hover {
 
 .boton-div-2 {
   position: relative;
-  text-align: left;
-  margin-right: 8%;
+  margin: 20px 0;
+  display: inline-block;
 }
 
 .boton-div-2 .boton-3 {
@@ -17879,6 +17914,120 @@ body#tinymce {
   .servicios {
     top: 0 !important;
   }
+}
+
+.info-servicios,
+.info-servicios-beneficios {
+  width: 70%;
+  margin: 50px auto 100px auto;
+  position: relative;
+}
+
+.info-servicios h3,
+.info-servicios h1,
+.info-servicios-beneficios h3,
+.info-servicios-beneficios h1 {
+  color: red;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  letter-spacing: 1px;
+}
+
+.info-servicios p,
+.info-servicios-beneficios p {
+  padding: 20px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.registrarse-servicios {
+  width: 60%;
+  margin: 100px auto;
+  position: relative;
+}
+
+.registrarse-servicios h3,
+.registrarse-servicios h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.info-servicios-beneficios {
+  margin: -20px auto;
+}
+
+.info-servicios-beneficios img {
+  height: auto;
+  max-width: 100%;
+}
+
+.beneficio-del-servicio {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.beneficio-del-servicio h3,
+.beneficio-del-servicio h1,
+.beneficio-del-servicio h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.beneficio-del-servicio h1::before {
+  content: '';
+  width: 20%;
+  height: 4px;
+  background: red;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+.beneficio-del-servicio h4 {
+  font-size: 16px;
+}
+
+.caracteristicas-servicios h3,
+.caracteristicas-servicios h1 {
+  color: red;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  letter-spacing: 1px;
+}
+
+.caracteristicas-servicios .numero-beneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.caracteristicas-servicios .numero-beneficios .contain-num-beneficios .items-beneficios img {
+  width: 70px;
+  display: inline-block;
+}
+
+.caracteristicas-servicios .numero-beneficios .contain-num-beneficios .items-beneficios p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .nosotros {
@@ -18273,13 +18422,14 @@ ul#menu-menu-1 li:hover {
   margin: 50px auto;
   max-width: 1200px;
   position: relative;
+  padding: 0 25px 25px 25px;
 }
 
 .seccion-1 h1 {
   color: red;
   font-size: 30px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -18293,8 +18443,9 @@ ul#menu-menu-1 li:hover {
 .seccion-1 p {
   font-size: 18px;
   letter-spacing: 1.5px;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 35px;
+  text-align: center;
 }
 
 .seccion-2,
@@ -18311,27 +18462,36 @@ ul#menu-menu-1 li:hover {
 .seccion-3 .img {
   position: relative;
   text-align: right;
+  overflow: hidden;
 }
 
 .seccion-2 .img .img-1,
 .seccion-3 .img .img-1 {
-  position: relative;
-  height: auto;
-  width: 400px;
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  max-width: inherit;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .seccion-2 p,
 .seccion-3 p {
   padding: 5% 0 0 0;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .seccion-2 h1,
 .seccion-3 h1 {
   color: red;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  padding: 0 0 20px 0;
+  position: relative;
 }
 
 .seccion-3 .img {
@@ -18342,28 +18502,107 @@ ul#menu-menu-1 li:hover {
 .seccion-4 {
   height: auto;
   margin: 95px auto;
-  width: 70%;
+  width: 80%;
   min-width: 270px;
   max-width: 1200px;
   position: relative;
   color: white;
+  background: #fff;
+  padding: 50px;
+  border-radius: 50px;
 }
 
 .seccion-4 h1 {
   color: red;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: center;
+  padding: 0 0 20px 0;
+  position: relative;
 }
 
 .seccion-4 h2 {
   font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin: 30px 0;
+  padding: 20px 0;
+  position: relative;
 }
 
-.seccion-4 .content-seccion4 {
+.seccion-4 h2::before {
+  content: '';
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background: #fff;
+}
+
+.seccion-4 .contain-beneficios .content-seccion4 {
   background: red;
   border-radius: 25px;
-  max-width: 40%;
+  padding: 70px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.seccion-4 .contain-beneficios .numero-beneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-4 .contain-beneficios .numero-beneficios .contain-num-beneficios .items-beneficios {
+  text-align: center;
+}
+
+.seccion-4 .contain-beneficios .numero-beneficios .contain-num-beneficios .items-beneficios img {
+  width: 70px;
+  display: inline-block;
+}
+
+.seccion-4 .contain-beneficios .numero-beneficios .contain-num-beneficios .items-beneficios p {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.seccion-2 h1::before,
+.seccion-3 h1::before {
+  content: '';
+  border: 8px;
+  border-style: solid;
+  border-left-color: #000;
+  border-bottom-color: #000;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-beneficios {
+  display: inline-block;
+  background: red;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 100px;
+  -webkit-transition: .6s;
+  transition: .6s;
 }

@@ -104,7 +104,7 @@ function create_posttype() {
             'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
             'public' => true,
             'publicly_queryable' => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'rewrite' => array('slug' => 'servicios'),
         )
     );

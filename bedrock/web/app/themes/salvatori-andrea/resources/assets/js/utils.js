@@ -45,9 +45,21 @@ $('document').ready(function(){
     Barba.Prefetch.init();
   });
 
+
+/////////////////////////////////////////
+////////////////////////////////////////
+///////////////////////////////////////
+
+
 $('document').ready(function(){
   $('body').removeClass('nosotros');
+  $('body').removeClass('servicios');
 
+  $('.menu-contactanos').click(function (e) { 
+    e.preventDefault();
+    $('html, body').animate({scrollTop: ($('.contactanos-correo').offset().top) -70}, 1500);
+  });
+  
     $('.navbar-burger').click(function (e) { 
         e.preventDefault();
         $('.navbar-burger').toggleClass('is-active');
@@ -77,3 +89,4 @@ $('document').ready(function(){
           $('.quequeremos-content').fadeIn();
       });
 });
+

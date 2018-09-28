@@ -1,18 +1,3 @@
-
-@php
-global $post;
-$thumbID = get_post_thumbnail_id( $post->ID );
-$imgDestacada = wp_get_attachment_url( $thumbID );
-@endphp
-<div class="fondo" style="background:url('{{$imgDestacada}}'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
-    <div class="portada">
-        <h1>{!! App::title() !!}</h1>
-        <div class="raya"></div>
-        <p>{{ get_field('descripcion_header', 'option')}}</p>
-    </div>
-    <img class="svg-interno" src="@asset('images/svg/vector-3-01.svg')" style="width:100%; height:auto; " >
-</div>
-
 {{-- Repeater Content
 {{-- check if the repeater field has rows of data --}}
 @if(have_rows('seccion1', 9))
@@ -50,15 +35,14 @@ $imgDestacada = wp_get_attachment_url( $thumbID );
 @endwhile
 @else      
 @endif
-@if(have_rows('beneficios_nosotros', 9))
-{{-- loop through the rows of data --}}
-@while (have_rows('beneficios_nosotros', 9))@php(the_row())
-    @php( $titulo5 = get_sub_field('titulo_beneficios'))
-    @php( $sub5 = get_sub_field('subtitulo_beneficios'))
-    @php( $contenido5 = get_sub_field('contenido_beneficios'))
-@endwhile
-@else      
-@endif
+
+
+{{-------------------------------------------------------------------------
+
+    END CAMPOS
+
+ ------------------------------------------------------------------------}}
+
 <div class="seccion-1">
     <h1>{{$titulo}}</h1>
     <p>{{$contenido}}</p>
@@ -66,7 +50,7 @@ $imgDestacada = wp_get_attachment_url( $thumbID );
 <div class="seccion-2 columns">
     <div class="column content-seccion2">
     <h1>{{$titulo2}}</h1>
-    <p>{{$contenido2}}</p>
+    <p>{!!$contenido2!!}</p>
     </div>
     {{-- <div class="img column" style="background: url(''); height:400px; background-size: cover"></div>  --}}
     <div class="img column">
@@ -79,29 +63,49 @@ $imgDestacada = wp_get_attachment_url( $thumbID );
     </div>  
     <div class="column content-seccion3">
     <h1>{{$titulo3}}</h1>
-    <p>{{$contenido3}}</p>
+    <p>{!!$contenido3!!}</p>
     </div>
     {{-- <div class="img column" style="background: url(''); height:400px; background-size: cover"></div>  --}}
 </div>
 <div class="seccion-2 columns">  
         <div class="column content-seccion2">
         <h1>{{$titulo4}}</h1>
-        <p>{{$contenido4}}</p>
+        <p>{!!$contenido4!!}</p>
         </div>
         <div class="img column">
                 <img class="img-1" src="{{$imagen4}}">
         </div>
         {{-- <div class="img column" style="background: url(''); height:400px; background-size: cover"></div>  --}}
 </div>
-<div class="seccion-4">
-    <h1>{{$titulo5}}</h1>
-    <div class="columns">
-    <div class="content-seccion4 column">
-        <h2>{{$sub5}}</h2>
-        <p>{{$contenido5}}</p>
-    </div>
-    <div class="numero-beneficios column">
 
+
+<div class="seccion-4">
+        @if(have_rows('beneficios_nosotros', 9))
+        {{-- loop through the rows of data --}}
+        @while (have_rows('beneficios_nosotros', 9))@php(the_row())
+        <div class="contain-beneficios columns is-multiline is-paddingless">
+            <div class="column is-12">
+                <h1 style="margin: 50px 0;width: 60%;min-width: 270px;"> {{ get_sub_field('titulo_beneficios') }} </h1>
+            </div>
+                <div class="content-seccion4 column is-4">
+                    <h2>{{ get_sub_field('subtitulo_beneficios') }}</h2>
+                    <p>{{get_sub_field('contenido_beneficios')}}</p>
+                </div>
+                <div class="numero-beneficios column is-8">
+                        <div class="contain-num-beneficios columns is-multiline" style="padding: 0 20px;">
+                        @if(have_rows('numero_beneficios'))
+                        @while (have_rows('numero_beneficios'))@php(the_row())
+                            <div class="items-beneficios column is-4">
+                                <img src="{{get_sub_field('beneficios_img')}}">
+                                <p>{{get_sub_field('titulo_imagen_beneficios')}}</p>
+                            </div>
+                        @endWhile
+                      @endif
+                    </div>
+                </div>
+        @endwhile
+        @else      
+        @endif
     </div>
-    </div>
+    <a class="btn-beneficios" href="#">REGISTRARSE</a>
 </div>

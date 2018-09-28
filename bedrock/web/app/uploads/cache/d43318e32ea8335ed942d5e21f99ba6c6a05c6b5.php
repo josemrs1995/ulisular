@@ -1,5 +1,4 @@
 <?php $__env->startSection('content'); ?>
-<?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <div>
 
 <div class="fondo"  style="background: url(<?php echo e(get_field('imagen_header', 'options')); ?>); background-position: center center; background-size: cover; background-repeat: no-repeat;" >  

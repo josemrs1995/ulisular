@@ -56,7 +56,6 @@ class App extends Controller
     function serviciosLoop()
     {
         $servicios = get_posts([
-            'posts_per_page'=>'4',
             'post_type' => 'servicios',
             'has_archive' => false,
         ]);

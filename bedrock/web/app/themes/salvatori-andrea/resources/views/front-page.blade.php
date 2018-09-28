@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@include('partials.page-header')
 <div>
 {{-- <pages-loop></pages-loop> --}}
 <div class="fondo"  style="background: url({{ get_field('imagen_header', 'options') }}); background-position: center center; background-size: cover; background-repeat: no-repeat;" >  

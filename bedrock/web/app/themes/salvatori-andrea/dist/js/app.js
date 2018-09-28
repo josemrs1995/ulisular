@@ -11372,8 +11372,19 @@ __WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
   __WEBPACK_IMPORTED_MODULE_1_barba_js___default.a.Prefetch.init();
 });
 
+/////////////////////////////////////////
+////////////////////////////////////////
+///////////////////////////////////////
+
+
 __WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
   __WEBPACK_IMPORTED_MODULE_2_jquery___default()('body').removeClass('nosotros');
+  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('body').removeClass('servicios');
+
+  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.menu-contactanos').click(function (e) {
+    e.preventDefault();
+    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('html, body').animate({ scrollTop: __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.contactanos-correo').offset().top - 70 }, 1500);
+  });
 
   __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.navbar-burger').click(function (e) {
     e.preventDefault();

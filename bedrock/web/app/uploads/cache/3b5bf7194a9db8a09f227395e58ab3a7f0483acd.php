@@ -7,7 +7,7 @@
     <div class="content-nosotros columns">
         <div class="column">
                 <h1><?php echo e(get_field('titulo_nosotros', 'option')); ?></h1>
-                <div class="titulos-content" style="margin-top:25px;">
+                <div class="titulos-content" style="margin: 20px 0;display: inline-block;">
                     <a href="#" class="quehacemos active">Que hacemos</a>
                     <a href="#" style="margin-left: 10px; margin-right: 10px;" class="porquehacemos">Porque lo hacemos</a>
                     <a href="#" class="quequeremos">Que queremos</a>
