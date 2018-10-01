@@ -10998,6 +10998,44 @@ Barba.Dispatcher.on('transitionCompleted', function (currentStatus, oldStatus, c
     setTimeout(function () {
         clearInterval(sync);
     }, 15000);
+
+    ////
+    $('body').removeClass('nosotros');
+    $('body').removeClass('servicios');
+
+    $('.menu-contactanos').click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $('.contactanos-correo').offset().top - 70 }, 1500);
+    });
+
+    $('.navbar-burger').click(function (e) {
+        e.preventDefault();
+        $('.navbar-burger').toggleClass('is-active');
+        $('.menu-responsive').fadeToggle();
+    });
+    $('.porquehacemos-content,.quequeremos-content').fadeOut();
+
+    $('.quehacemos').click(function (e) {
+        e.preventDefault();
+        $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
+        $(this).addClass('active');
+        $('.porquehacemos-content,.quequeremos-content').fadeOut();
+        $('.quehacemos-content').fadeIn();
+    });
+    $('.porquehacemos').click(function (e) {
+        e.preventDefault();
+        $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
+        $(this).addClass('active');
+        $('.quehacemos-content,.quequeremos-content').fadeOut();
+        $('.porquehacemos-content').fadeIn();
+    });
+    $('.quequeremos').click(function (e) {
+        e.preventDefault();
+        $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
+        $(this).addClass('active');
+        $('.quehacemos-content,.porquehacemos-content').fadeOut();
+        $('.quequeremos-content').fadeIn();
+    });
 });
 
 /***/ }),
@@ -11377,44 +11415,7 @@ __WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
 ///////////////////////////////////////
 
 
-__WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('body').removeClass('nosotros');
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('body').removeClass('servicios');
-
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.menu-contactanos').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('html, body').animate({ scrollTop: __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.contactanos-correo').offset().top - 70 }, 1500);
-  });
-
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.navbar-burger').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.navbar-burger').toggleClass('is-active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.menu-responsive').fadeToggle();
-  });
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.porquehacemos-content,.quequeremos-content').fadeOut();
-
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()(this).addClass('active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.porquehacemos-content,.quequeremos-content').fadeOut();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos-content').fadeIn();
-  });
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.porquehacemos').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()(this).addClass('active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos-content,.quequeremos-content').fadeOut();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.porquehacemos-content').fadeIn();
-  });
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quequeremos').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()(this).addClass('active');
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quehacemos-content,.porquehacemos-content').fadeOut();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.quequeremos-content').fadeIn();
-  });
-});
+__WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {});
 
 /***/ }),
 

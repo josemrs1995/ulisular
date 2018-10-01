@@ -3739,7 +3739,6 @@ footer .svg-over .svg-footer {
   height: auto;
   bottom: 0;
   z-index: -1;
-  min-width: 1600px;
 }
 
 footer a {
@@ -3905,6 +3904,7 @@ footer .content-footer .copy .p {
 @media only screen and (max-width: 769px) {
   .svg-over .svg-footer {
     bottom: 0 !important;
+    min-width: 1200px;
   }
 
   .contactanos .img-footer {
@@ -17760,7 +17760,7 @@ label.panel-block:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 81px;
+  height: 85px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -17792,7 +17792,7 @@ label.panel-block:hover {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
@@ -17856,7 +17856,6 @@ body#tinymce {
   text-align: center;
   margin: 0;
   height: auto;
-  top: -20vh;
 }
 
 .servicios .orden-items-servicios {
@@ -17872,7 +17871,7 @@ body#tinymce {
   text-align: left;
   background: #fff;
   z-index: 1;
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
   padding: 0;
   margin: 10px;
@@ -17892,6 +17891,7 @@ body#tinymce {
 .servicios .servicio-item p {
   color: #000;
   font-size: 12px !important;
+  text-align: justify;
 }
 
 .servicios img {
@@ -17910,12 +17910,6 @@ body#tinymce {
   width: 170px;
 }
 
-@media only screen and (max-width: 769px) {
-  .servicios {
-    top: 0 !important;
-  }
-}
-
 .info-servicios,
 .info-servicios-beneficios {
   width: 70%;
@@ -17932,7 +17926,6 @@ body#tinymce {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 30px;
   letter-spacing: 1px;
 }
 
@@ -17949,12 +17942,13 @@ body#tinymce {
   width: 60%;
   margin: 100px auto;
   position: relative;
+  height: 70vh;
 }
 
 .registrarse-servicios h3,
 .registrarse-servicios h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -17970,11 +17964,31 @@ body#tinymce {
 
 .beneficio-del-servicio {
   width: 70%;
-  margin: 0 auto;
+  margin: 95px auto;
   position: relative;
 }
 
-.beneficio-del-servicio h3,
+.beneficio-del-servicio .imagen-beneficios-servicios {
+  position: relative;
+  overflow: hidden;
+}
+
+.beneficio-del-servicio .imagen-beneficios-servicios img {
+  height: 100% !important;
+  width: auto;
+  max-width: inherit;
+  position: absolute;
+}
+
+.beneficio-del-servicio p {
+  padding: 20px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.beneficio-del-servicio N h3,
 .beneficio-del-servicio h1,
 .beneficio-del-servicio h4 {
   color: black;
@@ -18000,14 +18014,17 @@ body#tinymce {
   font-size: 16px;
 }
 
+.caracteristicas-servicios {
+  height: 111vh;
+}
+
 .caracteristicas-servicios h3,
 .caracteristicas-servicios h1 {
   color: red;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 30px;
   letter-spacing: 1px;
 }
 
@@ -18019,6 +18036,10 @@ body#tinymce {
   margin: 0 auto;
 }
 
+.caracteristicas-servicios .numero-beneficios .contain-num-beneficios .items-beneficios {
+  margin: 50px auto;
+}
+
 .caracteristicas-servicios .numero-beneficios .contain-num-beneficios .items-beneficios img {
   width: 70px;
   display: inline-block;
@@ -18026,8 +18047,32 @@ body#tinymce {
 
 .caracteristicas-servicios .numero-beneficios .contain-num-beneficios .items-beneficios p {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 769px) {
+  .info-servicios p,
+  .info-servicios-beneficios p {
+    padding: 0;
+  }
+
+  .servicios {
+    top: 0 !important;
+  }
+
+  .caracteristicas-servicios {
+    height: auto;
+  }
+
+  .beneficio-del-servicio p {
+    padding: 0;
+  }
+
+  .imagen-beneficios-servicios img {
+    height: auto;
+  }
 }
 
 .nosotros {
@@ -18153,6 +18198,8 @@ body#tinymce {
   background: white;
   -webkit-transition: .6s;
   transition: .6s;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .noticias .caja-procesos .img-noticia {
@@ -18417,6 +18464,12 @@ ul#menu-menu-1 li:hover {
   position: absolute;
 }
 
+@media only screen and (max-width: 769px) {
+  .svg-interno {
+    top: 122vh;
+  }
+}
+
 .seccion-1 {
   height: auto;
   margin: 50px auto;
@@ -18507,7 +18560,6 @@ ul#menu-menu-1 li:hover {
   max-width: 1200px;
   position: relative;
   color: white;
-  background: #fff;
   padding: 50px;
   border-radius: 50px;
 }
@@ -18572,7 +18624,7 @@ ul#menu-menu-1 li:hover {
 
 .seccion-4 .contain-beneficios .numero-beneficios .contain-num-beneficios .items-beneficios p {
   color: #000;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
 }
