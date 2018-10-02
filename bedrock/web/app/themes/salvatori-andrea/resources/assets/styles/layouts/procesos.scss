@@ -22,9 +22,15 @@
     border-radius: 5px;
     overflow: hidden;
 
-    .img-noticia {
+    .img-noticias {
       background-size: cover;
       overflow: hidden;
+      transition: 3s;
+      background-position: 0% 0% !important;
+
+      &:hover {
+        background-position: 100% 100% !important;
+      }
     }
 
     .content-procesos {

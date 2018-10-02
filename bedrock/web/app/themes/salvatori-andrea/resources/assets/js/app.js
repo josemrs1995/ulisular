@@ -51,14 +51,14 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
             $('.porquehacemos').click(function (e) { 
                 e.preventDefault();
                 $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
-                $(this).addClass('active');
+                $(this).addClass('active'); 
                 $('.quehacemos-content,.quequeremos-content').fadeOut();
                 $('.porquehacemos-content').fadeIn();
             });
             $('.quequeremos').click(function (e) { 
                 e.preventDefault();
                 $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
-                $(this).addClass('active');
+                 $(this).addClass('active');
                 $('.quehacemos-content,.porquehacemos-content').fadeOut();
                 $('.quequeremos-content').fadeIn();
             });

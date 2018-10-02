@@ -23,6 +23,12 @@
 
   .menu-item a {
     color: black !important;
+    transition: 0.4s;
+
+    &:hover {
+      color: red !important;
+      transition: 0.4s;
+    }
   }
 
   .menu-iniciar-sesion {
@@ -31,6 +37,11 @@
       padding: 8px 20px;
       border-radius: 50px;
       color: white !important;
+      font-weight: 600;
+
+      &:hover {
+        color: white !important;
+      }
     }
   }
 }

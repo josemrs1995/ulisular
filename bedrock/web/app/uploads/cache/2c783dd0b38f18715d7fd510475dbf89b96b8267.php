@@ -16,7 +16,7 @@
         <p><?php echo e(get_sub_field('contenido')); ?></p>
     </div>
     <div class="column imagen-beneficios-servicios">
-       <img src="<?php echo e(get_sub_field('imagen')); ?>"> 
+       <img class="img-beneficios" src="<?php echo e(get_sub_field('imagen')); ?>"> 
     </div>
   <?php endwhile; ?>
 <?php else: ?>      

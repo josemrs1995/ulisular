@@ -44,6 +44,13 @@
   img {
     height: 200px;
     width: 100%;
+    transition: 0.6s;
+    transition-timing-function: linear;
+  
+    &:hover {
+      transform: scale(1.1);
+      transform-origin: bottom;
+    }
   }
 
   .servicio-item:hover {
@@ -119,10 +126,10 @@
       position: relative;
       overflow: hidden;
 
-      img {
-        height: 100% !important;
+      .img-beneficios {
+        height: 100%;
         width: auto;
-        max-width: inherit;
+        max-width: max-content;
         position: absolute;
       }
     }
@@ -225,8 +232,10 @@
   }
 
   .imagen-beneficios-servicios {
-    img {
-      height: auto;
+    .img-beneficios {
+      height: auto !important;
+      position: relative !important;
+      max-width: 100% !important;
     }
   }
 }

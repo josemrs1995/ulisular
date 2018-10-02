@@ -3624,7 +3624,7 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
@@ -3698,6 +3698,7 @@ a {
 
 .fondo .portada h1 {
   font-weight: 800;
+  font-size: 35px;
 }
 
 .fondo .portada p {
@@ -17698,12 +17699,21 @@ label.panel-block:hover {
 
 .boton-1 {
   background: red;
-  padding: 10px 26px;
+  padding: 7px 26px;
   border-radius: 40px;
   color: white !important;
   display: inline-block;
   margin-top: 25px;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.boton-1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .boton-div {
@@ -17714,13 +17724,22 @@ label.panel-block:hover {
 
 .boton-div .boton-2 {
   background: red;
-  padding: 10px 26px;
+  padding: 7px 26px;
   border-radius: 40px;
   color: white !important;
   display: inline-block;
   margin-top: 15px;
   font-weight: 600;
   position: relative;
+  text-transform: uppercase;
+  font-size: 10px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.boton-div .boton-2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .boton-div-2 {
@@ -17731,13 +17750,22 @@ label.panel-block:hover {
 
 .boton-div-2 .boton-3 {
   background: red;
-  padding: 10px 26px;
+  padding: 7px 26px;
   border-radius: 40px;
   color: white !important;
   display: inline-block;
   margin-top: 15px;
   font-weight: 600;
   position: relative;
+  text-transform: uppercase;
+  font-size: 10px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.boton-div-2 .boton-3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .boton-div-3 {
@@ -17747,13 +17775,22 @@ label.panel-block:hover {
 
 .boton-div-3 .boton-4 {
   background: red;
-  padding: 10px 26px;
+  padding: 7px 26px;
   border-radius: 40px;
   color: white !important;
   display: inline-block;
   margin-top: 15px;
   font-weight: 600;
   position: relative;
+  text-transform: uppercase;
+  font-size: 10px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.boton-div-3 .boton-4:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nav-primary {
@@ -17782,12 +17819,25 @@ label.panel-block:hover {
 
 .nav .menu-item a {
   color: black !important;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.nav .menu-item a:hover {
+  color: red !important;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .nav .menu-iniciar-sesion a {
   background: red;
   padding: 8px 20px;
   border-radius: 50px;
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav .menu-iniciar-sesion a:hover {
   color: white !important;
 }
 
@@ -17897,6 +17947,17 @@ body#tinymce {
 .servicios img {
   height: 200px;
   width: 100%;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.servicios img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .servicios .servicio-item:hover {
@@ -17973,10 +18034,12 @@ body#tinymce {
   overflow: hidden;
 }
 
-.beneficio-del-servicio .imagen-beneficios-servicios img {
-  height: 100% !important;
+.beneficio-del-servicio .imagen-beneficios-servicios .img-beneficios {
+  height: 100%;
   width: auto;
-  max-width: inherit;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   position: absolute;
 }
 
@@ -18070,8 +18133,10 @@ body#tinymce {
     padding: 0;
   }
 
-  .imagen-beneficios-servicios img {
-    height: auto;
+  .imagen-beneficios-servicios .img-beneficios {
+    height: auto !important;
+    position: relative !important;
+    max-width: 100% !important;
   }
 }
 
@@ -18103,12 +18168,23 @@ body#tinymce {
   font-size: 15px !important;
   font-weight: 800 !important;
   letter-spacing: 2.5px !important;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .nosotros .quehacemos.active,
 .nosotros .porquehacemos.active,
 .nosotros .quequeremos.active {
   color: red !important;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.nosotros .quehacemos.active:hover,
+.nosotros .porquehacemos.active:hover,
+.nosotros .quequeremos.active:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -18202,9 +18278,16 @@ body#tinymce {
   overflow: hidden;
 }
 
-.noticias .caja-procesos .img-noticia {
+.noticias .caja-procesos .img-noticias {
   background-size: cover;
   overflow: hidden;
+  -webkit-transition: 3s;
+  transition: 3s;
+  background-position: 0% 0% !important;
+}
+
+.noticias .caja-procesos .img-noticias:hover {
+  background-position: 100% 100% !important;
 }
 
 .noticias .caja-procesos .content-procesos {
@@ -18464,12 +18547,6 @@ ul#menu-menu-1 li:hover {
   position: absolute;
 }
 
-@media only screen and (max-width: 769px) {
-  .svg-interno {
-    top: 122vh;
-  }
-}
-
 .seccion-1 {
   height: auto;
   margin: 50px auto;
@@ -18494,7 +18571,7 @@ ul#menu-menu-1 li:hover {
 }
 
 .seccion-1 p {
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 1.5px;
   font-weight: 500;
   margin-top: 35px;
@@ -18520,13 +18597,12 @@ ul#menu-menu-1 li:hover {
 
 .seccion-2 .img .img-1,
 .seccion-3 .img .img-1 {
-  position: absolute;
-  left: 50%;
   height: 100%;
-  width: auto;
-  max-width: inherit;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  width: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  position: relative;
 }
 
 .seccion-2 p,
@@ -18566,13 +18642,11 @@ ul#menu-menu-1 li:hover {
 
 .seccion-4 h1 {
   color: red;
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
+  font-size: 25px;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 0 20px 0;
-  position: relative;
+  letter-spacing: 1px;
 }
 
 .seccion-4 h2 {
@@ -18657,4 +18731,20 @@ ul#menu-menu-1 li:hover {
   margin-top: 100px;
   -webkit-transition: .6s;
   transition: .6s;
+}
+
+@media only screen and (max-width: 769px) {
+  .svg-interno {
+    top: 122vh;
+  }
+
+  .seccion-4 {
+    width: auto;
+  }
+
+  .seccion-4 h1 {
+    margin: 50px 0px;
+    width: auto !important;
+    min-width: auto !important;
+  }
 }

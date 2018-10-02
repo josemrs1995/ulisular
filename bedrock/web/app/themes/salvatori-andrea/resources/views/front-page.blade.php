@@ -13,7 +13,6 @@
         <a class="boton-1" href="{{ $boton['url']}}">{{ $boton['title']}}</a>
     </div>
 </div>
-
 <div class="servicios columns">
         @foreach (array_slice($servicios_loop,0,4) as $servicios)
         <div class="servicio-item column is-3">

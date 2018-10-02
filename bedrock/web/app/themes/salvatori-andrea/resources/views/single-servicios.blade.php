@@ -17,7 +17,7 @@
         <p>{{ get_sub_field('contenido') }}</p>
     </div>
     <div class="column imagen-beneficios-servicios">
-       <img src="{{ get_sub_field('imagen') }}"> 
+       <img class="img-beneficios" src="{{ get_sub_field('imagen') }}"> 
     </div>
   @endwhile
 @else      

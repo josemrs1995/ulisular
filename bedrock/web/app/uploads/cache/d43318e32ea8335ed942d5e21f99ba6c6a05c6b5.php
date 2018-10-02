@@ -11,7 +11,6 @@
         <a class="boton-1" href="<?php echo e($boton['url']); ?>"><?php echo e($boton['title']); ?></a>
     </div>
 </div>
-
 <div class="servicios columns">
         <?php $__currentLoopData = array_slice($servicios_loop,0,4); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $servicios): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <div class="servicio-item column is-3">
