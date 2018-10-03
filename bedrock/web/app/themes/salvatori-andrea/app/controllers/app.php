@@ -77,6 +77,7 @@ class App extends Controller
     {
         $procesos= get_posts([
             'post_type' => 'post',
+            'order' => 'ASC', 'include' => array(),
         ]);
  
         return array_map(function ($post) {

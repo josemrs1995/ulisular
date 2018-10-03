@@ -32,7 +32,7 @@
                     <?php while(have_rows('contenido')): ?><?php (the_row()); ?>
                         <div class="items-beneficios column is-4">
                             <img src="<?php echo e(get_sub_field('imagen')); ?>">
-                            <p><?php echo e(get_sub_field('titulo')); ?></p>
+                            <h5><?php echo e(get_sub_field('titulo')); ?></h5>
                             <p><?php echo e(get_sub_field('contenido')); ?></p>
                         </div>
                     <?php endwhile; ?>

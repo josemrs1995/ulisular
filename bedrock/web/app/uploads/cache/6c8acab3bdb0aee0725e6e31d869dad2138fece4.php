@@ -1,5 +1,5 @@
 <div class="noticias container">
-    <h1>Procesos</h1>
+    <h5>Procesos</h5>
 <div class="columns timeline-container is-multiline" style="position:relative">
 
     
@@ -10,15 +10,13 @@
             <div class="diamante">
                 <div class="rombo"></div>
             </div>
-        <a href="<?php echo e($procesos['link']); ?>">
             <div class="caja-procesos columns is-12">
                 <div class="img-noticias column is-5" style="background:url('<?php echo e($procesos['thumbnail']); ?>'); background-size:cover;"></div>
                 <div class="content-procesos column is-7">
-                    <h2 class="titulo"><?php echo e($procesos['title']); ?></h2>
+                    <h5 class="titulo"><?php echo e($procesos['title']); ?></h5>
                     <p class="resumen"><?php echo $procesos['resumen']; ?></p>
                 </div>
             </div>
-        </a>
         </div>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
  

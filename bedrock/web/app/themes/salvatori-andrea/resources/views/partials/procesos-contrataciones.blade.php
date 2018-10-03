@@ -1,5 +1,5 @@
 <div class="noticias container">
-    <h1>Procesos</h1>
+    <h5>Procesos</h5>
 <div class="columns timeline-container is-multiline" style="position:relative">
 
     {{--Esto es la barra vertical--}}
@@ -10,15 +10,13 @@
             <div class="diamante">
                 <div class="rombo"></div>
             </div>
-        <a href="{{$procesos['link']}}">
             <div class="caja-procesos columns is-12">
                 <div class="img-noticias column is-5" style="background:url('{{$procesos['thumbnail']}}'); background-size:cover;"></div>
                 <div class="content-procesos column is-7">
-                    <h2 class="titulo">{{$procesos['title']}}</h2>
+                    <h5 class="titulo">{{$procesos['title']}}</h5>
                     <p class="resumen">{!! $procesos['resumen'] !!}</p>
                 </div>
             </div>
-        </a>
         </div>
     @endforeach
  

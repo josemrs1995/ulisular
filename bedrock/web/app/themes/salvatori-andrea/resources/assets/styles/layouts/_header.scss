@@ -22,14 +22,29 @@
   text-transform: uppercase;
 
   .menu-item a {
-    color: black !important;
-    transition: 0.4s;
+      color: black !important;
+      transition: 0.5s;
+      position: relative;
 
-    &:hover {
-      color: red !important;
-      transition: 0.4s;
-    }
-  }
+      &:hover{
+        transition: 0.5s;
+
+        &::after{
+          width: 90%;
+        }
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        width: 0;
+        transition: 0.6s;
+        border-top: 2px solid red;
+        transform: translateX(-50%);
+      }
+  } 
 
   .menu-iniciar-sesion {
     a {
@@ -41,6 +56,10 @@
 
       &:hover {
         color: white !important;
+
+        &::after{
+          width: 0 !important;
+        }
       }
     }
   }

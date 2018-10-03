@@ -6,13 +6,15 @@
   position: relative;
   height: auto;
 
-  h1 {
+  h5 {
     color: red;
     font-weight: 600;
     font-size: 30px;
     letter-spacing: 5px;
     text-align: center;
     margin-bottom: 50px;
+    font-weight: 700; 
+    text-transform: uppercase;
   }
 
   .caja-procesos {
@@ -22,15 +24,17 @@
     border-radius: 5px;
     overflow: hidden;
 
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
     .img-noticias {
       background-size: cover;
       overflow: hidden;
       transition: 3s;
       background-position: 0% 0% !important;
-
-      &:hover {
-        background-position: 100% 100% !important;
-      }
     }
 
     .content-procesos {
@@ -40,6 +44,10 @@
 
   .caja-procesos:hover {
     transform: scale(1.025);
+  
+    .img-noticias{
+      background-position: 100% 100% !important;
+    }
   }
 
   a {

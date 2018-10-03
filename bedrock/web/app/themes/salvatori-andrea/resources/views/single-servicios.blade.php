@@ -33,7 +33,7 @@
                     @while (have_rows('contenido'))@php(the_row())
                         <div class="items-beneficios column is-4">
                             <img src="{{get_sub_field('imagen')}}">
-                            <p>{{get_sub_field('titulo')}}</p>
+                            <h5>{{get_sub_field('titulo')}}</h5>
                             <p>{{get_sub_field('contenido')}}</p>
                         </div>
                     @endWhile

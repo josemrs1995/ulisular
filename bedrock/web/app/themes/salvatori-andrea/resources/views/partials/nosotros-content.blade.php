@@ -44,7 +44,7 @@
  ------------------------------------------------------------------------}}
 
 <div class="seccion-1">
-    <h1>{{$titulo}}</h1>
+    <h5>{{$titulo}}</h5>
     <p>{{$contenido}}</p>
 </div>
 <div class="seccion-2 columns">
@@ -85,7 +85,7 @@
         @while (have_rows('beneficios_nosotros', 9))@php(the_row())
         <div class="contain-beneficios columns is-multiline is-paddingless">
             <div class="column is-12">
-                <h1 style="margin: 50px 0;width: 60%;min-width: 270px;"> {{ get_sub_field('titulo_beneficios') }} </h1>
+                <h1 style="margin: 50px 0; min-width: 270px;"> {{ get_sub_field('titulo_beneficios') }} </h1>
             </div>
                 <div class="content-seccion4 column is-4">
                     <h2>{{ get_sub_field('subtitulo_beneficios') }}</h2>
@@ -107,5 +107,7 @@
         @else      
         @endif
     </div>
-    <a class="btn-beneficios" href="#">REGISTRARSE</a>
+    <div class="boton-div-4">
+        <a class="btn-beneficios" href="#">REGISTRATE</a>
+    </div>
 </div>
