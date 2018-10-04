@@ -3,11 +3,11 @@
 @include('partials.page-header')
   
 @while(have_posts()) @php the_post() @endphp
-<div class="info-servicios-beneficios">
+<div class="info-servicios-beneficios  animate fadeInUp">
         @include('partials.content-single-'.get_post_type())
     @endwhile
 </div>
-<div class="beneficio-del-servicio columns">
+<div class="beneficio-del-servicio columns  animate fadeInUp">
     @if(have_rows('seccion_2_servicios'))
   {{-- loop through the rows of data --}}
   @while (have_rows('seccion_2_servicios'))@php(the_row())
@@ -23,7 +23,7 @@
 @else      
 @endif
 </div>
-<div class="caracteristicas-servicios">
+<div class="caracteristicas-servicios  animate fadeInUp">
     @if(have_rows('seccion_3_servicios'))
     @while (have_rows('seccion_3_servicios'))@php(the_row())
     <h3>{{get_sub_field('titulo_caracteristicas')}}</h3>

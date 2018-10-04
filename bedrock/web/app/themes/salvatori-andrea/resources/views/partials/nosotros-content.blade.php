@@ -43,12 +43,12 @@
 
  ------------------------------------------------------------------------}}
 
-<div class="seccion-1">
+<div class="seccion-1 animate fadeInUp">
     <h5>{{$titulo}}</h5>
     <p>{{$contenido}}</p>
 </div>
-<div class="seccion-2 columns">
-    <div class="column content-seccion2">
+<div class="seccion-2 columns animate fadeInUp">
+    <div class="column content-seccion2  ">
     <h1>{{$titulo2}}</h1>
     <p>{!!$contenido2!!}</p>
     </div>
@@ -57,17 +57,17 @@
         <img class="img-1" src="{{$imagen2}}">
     </div>  
 </div>
-<div class="seccion-3 columns">
-    <div class="img column">
+<div class="seccion-3 columns animate fadeInUp">
+    <div class="img column ">
             <img class="img-1" src="{{$imagen3}}">
     </div>  
-    <div class="column content-seccion3">
+    <div class="column content-seccion3 ">
     <h1>{{$titulo3}}</h1>
     <p>{!!$contenido3!!}</p>
     </div>
     {{-- <div class="img column" style="background: url(''); height:400px; background-size: cover"></div>  --}}
 </div>
-<div class="seccion-2 columns">  
+<div class="seccion-2 columns animate fadeInUp">  
         <div class="column content-seccion2">
         <h1>{{$titulo4}}</h1>
         <p>{!!$contenido4!!}</p>
@@ -79,7 +79,7 @@
 </div>
 
 
-<div class="seccion-4">
+<div class="seccion-4 animate fadeInUp">
         @if(have_rows('beneficios_nosotros', 9))
         {{-- loop through the rows of data --}}
         @while (have_rows('beneficios_nosotros', 9))@php(the_row())

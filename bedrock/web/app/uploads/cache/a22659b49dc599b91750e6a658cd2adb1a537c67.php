@@ -1,13 +1,13 @@
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-<div class="info-servicios">
+<div class="info-servicios  animate fadeInUp">
     <h3>
         <?php echo e(get_field('info_servicios_titulo', 11)); ?>
 
     </h3>
     <p><?php echo e(get_field('info_servicios_parrafo', 11)); ?></p>
 </div>
-<div class="servicios columns is-7 is-multiline" style="top: unset;">
+<div class="servicios columns is-7 is-multiline  animate fadeInUp" style="top: unset;">
         <?php $__currentLoopData = $servicios_loop; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $servicios): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <div class="servicio-item-interno column is-4">
             <img src="<?php echo e($servicios['thumbnail']); ?>')">
@@ -21,7 +21,7 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </div>
 
-<div class="registrarse-servicios">
+<div class="registrarse-servicios  animate fadeInUp">
 <h5>
     <?php echo e(get_field('info_resgistrarse_servicios', 11)); ?>
 

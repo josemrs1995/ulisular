@@ -2,11 +2,11 @@
 <?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   
 <?php while(have_posts()): ?> <?php the_post() ?>
-<div class="info-servicios-beneficios">
+<div class="info-servicios-beneficios  animate fadeInUp">
         <?php echo $__env->make('partials.content-single-'.get_post_type(), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php endwhile; ?>
 </div>
-<div class="beneficio-del-servicio columns">
+<div class="beneficio-del-servicio columns  animate fadeInUp">
     <?php if(have_rows('seccion_2_servicios')): ?>
   
   <?php while(have_rows('seccion_2_servicios')): ?><?php (the_row()); ?>
@@ -22,7 +22,7 @@
 <?php else: ?>      
 <?php endif; ?>
 </div>
-<div class="caracteristicas-servicios">
+<div class="caracteristicas-servicios  animate fadeInUp">
     <?php if(have_rows('seccion_3_servicios')): ?>
     <?php while(have_rows('seccion_3_servicios')): ?><?php (the_row()); ?>
     <h3><?php echo e(get_sub_field('titulo_caracteristicas')); ?></h3>

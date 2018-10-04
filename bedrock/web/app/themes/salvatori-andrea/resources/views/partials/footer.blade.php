@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info animate fadeInUp">
   <div class="svg-over">
   <img class="svg-footer" src="@asset('images/svg/vector-02r.svg')" style="width:100%; height:auto; " >
   </div>
@@ -17,8 +17,8 @@
         </div>
         <p class="p-contactanos-reserved"> COPYRIGHT - © 2018 ULISULARTOURS.COM ALL RIGHTS RESERVED</p>
       </div>
-    </div>
-    <div class="contactanos-correo column is-7">
+    </div>  
+    <div class="contactanos-correo column is-7 ">
         <h5>PÓNGASE EN CONTACTO CON NOSOTROS.</h5>
         <form action="" method="POST" class="formulario">
           <input type="text" id="nombre" name="nombre" placeholder="Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'">

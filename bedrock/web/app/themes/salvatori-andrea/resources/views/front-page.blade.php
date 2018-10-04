@@ -13,7 +13,7 @@
         <a class="boton-1" href="{{ $boton['url']}}">{{ $boton['title']}}</a>
     </div>
 </div>
-<div class="servicios columns">
+<div class="servicios columns  animate fadeInUp">
         @foreach (array_slice($servicios_loop,0,4) as $servicios)
         <div class="servicio-item column is-3">
             <img src="{{$servicios['thumbnail']}}')">

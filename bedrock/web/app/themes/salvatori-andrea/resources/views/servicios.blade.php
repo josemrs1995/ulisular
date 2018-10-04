@@ -6,13 +6,13 @@
 
 @section('content')
 @include('partials.page-header')
-<div class="info-servicios">
+<div class="info-servicios  animate fadeInUp">
     <h3>
         {{ get_field('info_servicios_titulo', 11) }}
     </h3>
     <p>{{ get_field('info_servicios_parrafo', 11) }}</p>
 </div>
-<div class="servicios columns is-7 is-multiline" style="top: unset;">
+<div class="servicios columns is-7 is-multiline  animate fadeInUp" style="top: unset;">
         @foreach ($servicios_loop as $servicios)
         <div class="servicio-item-interno column is-4">
             <img src="{{$servicios['thumbnail']}}')">
@@ -26,7 +26,7 @@
         @endforeach
 </div>
 
-<div class="registrarse-servicios">
+<div class="registrarse-servicios  animate fadeInUp">
 <h5>
     {{ get_field('info_resgistrarse_servicios', 11) }}
 </h5>

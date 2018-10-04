@@ -1,10 +1,10 @@
-<div class="nosotros">
+<div class="nosotros  animate fadeInUp">
     <div class="nosotros-frase">
             <h3><?php echo e(get_field('frase_nosotros', 'option')); ?></h3>
             <div class="raya"></div>
     </div>
    
-    <div class="content-nosotros columns">
+    <div class="content-nosotros columns animate fadeInUp">
         <div class="column">
                 <h5><?php echo e(get_field('titulo_nosotros', 'option')); ?></h5>
                 <div class="titulos-content" style="margin: 30px 0;display: inline-block;">
