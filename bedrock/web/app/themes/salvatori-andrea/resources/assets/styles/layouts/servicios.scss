@@ -11,7 +11,8 @@
     margin: 25px 25px 25px 25px;
   }
 
-  .servicio-item {
+  .servicio-item,
+  .servicio-item-interno {
     max-width: 500px;
     min-width: 270px;
     width: 18%;
@@ -32,6 +33,7 @@
     h3 {
       font-weight: 600;
       color: #000;
+      height: 40px
     }
 
     p {
@@ -39,6 +41,11 @@
       font-size: 12px !important;
       text-align: justify;
     }
+  }
+  .servicio-item-interno {
+    max-width: 450px;
+    width: 23%;
+    margin: 20px;
   }
 
   img {
@@ -48,7 +55,8 @@
     transition-timing-function: linear;
   }
 
-  .servicio-item:hover {
+  .servicio-item:hover, 
+  .servicio-item-interno:hover {
     transform: scale(1.025);
   
     img {
@@ -238,6 +246,12 @@
 
   .caracteristicas-servicios {
     height: auto;
+
+    .contain-num-beneficios {
+      .items-beneficios {
+          text-align: center;
+      }
+    }
   }
 
   .beneficio-del-servicio {
@@ -251,6 +265,12 @@
       height: auto !important;
       position: relative !important;
       max-width: 100% !important;
+    }
+  }
+
+  .boton-div-4 {
+    .btn-beneficios {
+      margin-top: 30px !important; 
     }
   }
 }

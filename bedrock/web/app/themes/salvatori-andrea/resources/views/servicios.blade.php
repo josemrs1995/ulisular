@@ -14,7 +14,7 @@
 </div>
 <div class="servicios columns is-7 is-multiline" style="top: unset;">
         @foreach ($servicios_loop as $servicios)
-        <div class="servicio-item column is-4">
+        <div class="servicio-item-interno column is-4">
             <img src="{{$servicios['thumbnail']}}')">
             <div class="orden-items-servicios">    
                 <h2>{{$servicios['title']}}</h2>

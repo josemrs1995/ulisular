@@ -9,7 +9,7 @@
 </div>
 <div class="servicios columns is-7 is-multiline" style="top: unset;">
         <?php $__currentLoopData = $servicios_loop; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $servicios): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <div class="servicio-item column is-4">
+        <div class="servicio-item-interno column is-4">
             <img src="<?php echo e($servicios['thumbnail']); ?>')">
             <div class="orden-items-servicios">    
                 <h2><?php echo e($servicios['title']); ?></h2>

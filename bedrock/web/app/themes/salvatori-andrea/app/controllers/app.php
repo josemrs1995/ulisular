@@ -58,6 +58,7 @@ class App extends Controller
         $servicios = get_posts([
             'post_type' => 'servicios',
             'has_archive' => false,
+            'order' => 'ASC', 'include' => array(),
         ]);
  
         return array_map(function ($post) {

@@ -3786,8 +3786,7 @@ footer .content-footer .menu-footer .logo {
 
 footer .content-footer .contactanos-correo {
   background: white;
-  border-top-left-radius: 26px;
-  border-top-right-radius: 26px;
+  border-radius: 26px;
   position: relative;
   margin-top: 20px;
   padding: 5%;
@@ -17973,7 +17972,8 @@ body#tinymce {
   margin: 25px 25px 25px 25px;
 }
 
-.servicios .servicio-item {
+.servicios .servicio-item,
+.servicios .servicio-item-interno {
   max-width: 500px;
   min-width: 270px;
   width: 18%;
@@ -17994,15 +17994,26 @@ body#tinymce {
 
 .servicios .servicio-item h1,
 .servicios .servicio-item h2,
-.servicios .servicio-item h3 {
+.servicios .servicio-item h3,
+.servicios .servicio-item-interno h1,
+.servicios .servicio-item-interno h2,
+.servicios .servicio-item-interno h3 {
   font-weight: 600;
   color: #000;
+  height: 40px;
 }
 
-.servicios .servicio-item p {
+.servicios .servicio-item p,
+.servicios .servicio-item-interno p {
   color: #000;
   font-size: 12px !important;
   text-align: justify;
+}
+
+.servicios .servicio-item-interno {
+  max-width: 450px;
+  width: 23%;
+  margin: 20px;
 }
 
 .servicios img {
@@ -18014,12 +18025,14 @@ body#tinymce {
           transition-timing-function: linear;
 }
 
-.servicios .servicio-item:hover {
+.servicios .servicio-item:hover,
+.servicios .servicio-item-interno:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
 }
 
-.servicios .servicio-item:hover img {
+.servicios .servicio-item:hover img,
+.servicios .servicio-item-interno:hover img {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-transform: scale(1.1);
@@ -18206,6 +18219,10 @@ body#tinymce {
     height: auto;
   }
 
+  .caracteristicas-servicios .contain-num-beneficios .items-beneficios {
+    text-align: center;
+  }
+
   .beneficio-del-servicio p {
     padding: 0;
   }
@@ -18214,6 +18231,10 @@ body#tinymce {
     height: auto !important;
     position: relative !important;
     max-width: 100% !important;
+  }
+
+  .boton-div-4 .btn-beneficios {
+    margin-top: 30px !important;
   }
 }
 
@@ -18283,9 +18304,13 @@ body#tinymce {
 }
 
 @media only screen and (max-width: 768px) {
-  .nosotros .quehacemos,
-  .nosotros .porquehacemos,
-  .nosotros .quequeremos {
+  .nosotros .titulos-content {
+    margin: unset !important;
+  }
+
+  .nosotros .titulos-content .quehacemos,
+  .nosotros .titulos-content .porquehacemos,
+  .nosotros .titulos-content .quequeremos {
     display: none;
   }
 
@@ -18301,6 +18326,9 @@ body#tinymce {
   margin: 95px auto;
   min-width: 270px;
   max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nosotros .content-nosotros h5 {
@@ -18335,6 +18363,13 @@ body#tinymce {
 }
 
 @media only screen and (max-width: 768px) {
+  .nosotros .content-nosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
   .nosotros .content-nosotros .caja-content {
     margin: 10px auto !important;
   }
@@ -18374,6 +18409,7 @@ body#tinymce {
   transition: .6s;
   border-radius: 5px;
   overflow: hidden;
+  max-width: 480px;
 }
 
 .noticias .caja-procesos h5 {
@@ -18422,7 +18458,6 @@ body#tinymce {
 }
 
 .noticias .timeline-item {
-  padding: 0 10% 0 0;
   position: relative;
   margin-top: 50px;
 }
@@ -18464,8 +18499,14 @@ body#tinymce {
 }
 
 .noticias .timeline-item:nth-of-type(2n+1) {
-  padding: 0 0 0 10%;
   margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .noticias .timeline-item:nth-of-type(2n+1) .date {
@@ -18487,7 +18528,6 @@ body#tinymce {
 
 @media only screen and (max-width: 768px) {
   .timeline-item {
-    padding: 0 10% 0 10% !important;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
             box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
   }
@@ -18512,7 +18552,6 @@ body#tinymce {
   }
 
   .timeline-item:nth-of-type(2n+1) {
-    padding: 0 10% 0 10% !important;
     margin-top: 50px !important;
   }
 
@@ -18783,7 +18822,7 @@ ul#menu-menu-1 li:hover {
 .seccion-4 .contain-beneficios .content-seccion4 {
   background: red;
   border-radius: 25px;
-  padding: 0 53px 53px;
+  padding: 5px 5% 20px 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: justify;
@@ -18804,6 +18843,7 @@ ul#menu-menu-1 li:hover {
 
 .seccion-4 .contain-beneficios .numero-beneficios .contain-num-beneficios .items-beneficios {
   text-align: center;
+  display: inline-block;
 }
 
 .seccion-4 .contain-beneficios .numero-beneficios .contain-num-beneficios .items-beneficios img {

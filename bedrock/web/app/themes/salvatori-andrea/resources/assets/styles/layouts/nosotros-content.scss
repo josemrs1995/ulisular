@@ -133,7 +133,7 @@
     .content-seccion4 {
       background: red;
       border-radius: 25px;
-      padding: 0 53px 53px;
+      padding: 5px 5% 20px 5%;
       box-sizing: border-box;
       text-align: justify;
     }
@@ -147,6 +147,8 @@
 
         .items-beneficios {
           text-align: center;
+          display: inline-block;
+
           img {
             width: 60px;
             display: inline-block;

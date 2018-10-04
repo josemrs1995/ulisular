@@ -54,17 +54,20 @@
   }
 
   @media only screen and (max-width: 768px) {
-    .quehacemos,
-    .porquehacemos,
-    .quequeremos {
-      display: none;
-    }
+    .titulos-content {
+      margin: unset !important;
 
-    .quehacemos-content,
-    .porquehacemos-content,
-    .quequeremos-content {
-      position: relative !important;
+      .quehacemos,
+      .porquehacemos,
+      .quequeremos {
+        display: none;
+      }
     }
+      .quehacemos-content,
+      .porquehacemos-content,
+      .quequeremos-content {
+        position: relative !important;
+      }
   }
 
   .content-nosotros {
@@ -72,6 +75,7 @@
     margin: 95px auto;
     min-width: 270px;
     max-width: 1200px;
+    display: flex;
 
     h5 {
       font-weight: 700;
@@ -102,6 +106,8 @@
 @media only screen and (max-width: 768px) {
   .nosotros {
     .content-nosotros {
+      flex-direction: column-reverse;
+
       .caja-content {
         margin: 10px auto !important;
       }

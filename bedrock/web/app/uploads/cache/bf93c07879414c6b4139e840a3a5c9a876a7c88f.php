@@ -87,7 +87,7 @@
                     <p><?php echo e(get_sub_field('contenido_beneficios')); ?></p>
                 </div>
                 <div class="numero-beneficios column is-8">
-                        <div class="contain-num-beneficios columns is-multiline" style="padding: 0 20px;">
+                        <div class="contain-num-beneficios columns is-multiline" style="padding: 0 20px; text-align: center;">
                         <?php if(have_rows('numero_beneficios')): ?>
                         <?php while(have_rows('numero_beneficios')): ?><?php (the_row()); ?>
                             <div class="items-beneficios column is-4">
