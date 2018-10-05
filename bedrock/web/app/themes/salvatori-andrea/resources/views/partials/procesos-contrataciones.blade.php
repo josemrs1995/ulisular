@@ -8,12 +8,13 @@
         @foreach (array_slice($procesos_loop,0,4) as $procesos)
             <div class="column timeline-item is-half  animate fadeInUp">
                 <div class="diamante">
-                    <div class="rombo"></div>
-                </div>
-                <div class="caja-procesos columns is-12 animate fadeInUp">
+                            <div class="rombo"></div>
+                    </div>
+                <div class="caja-procesos columns animate fadeInUp">
                     <div class="img-noticias column is-5" style="background:url('{{$procesos['thumbnail']}}'); background-size:cover;"></div>
-                    <div class="content-procesos column is-7">
-                        <h5 class="titulo">{{$procesos['title']}}</h5>
+                    <div class="content-procesos column is-6">
+                        <h5 class="h5">{{$procesos['title']}}</h5>
+                        <span>{{ get_field('subtitulo_procesos', '61')}}</span>
                         <p class="resumen">{!! $procesos['resumen'] !!}</p>
                     </div>
                 </div>

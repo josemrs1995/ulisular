@@ -5143,6 +5143,10 @@ purgecss-webpack-plugin@^0.23.0:
     purgecss "^1.0.0"
     webpack-sources "^1.1.0"
 
+purgecss-with-wordpress@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/purgecss-with-wordpress/-/purgecss-with-wordpress-1.0.0.tgz#5e7b23345d7745d55655bfee918cdca3572cd18d"
+
 purgecss@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-1.1.0.tgz#0d27c18bb4070d246a845ea22697271eabb59ffe"

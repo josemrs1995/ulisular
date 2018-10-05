@@ -1,0 +1,47 @@
+.svg-interno {
+  transform: translateY(-52%);
+  transform-origin: center;
+  top: 128vh;
+  position: absolute;
+}
+
+.seccion-1 {
+  height: auto;
+  margin: 50px auto;
+  max-width: 1200px;
+  position: relative;
+
+  h1 {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+}
+
+.seccion-2 {
+  width: 90%;
+  margin: 95px auto;
+  min-width: 270px;
+  max-width: 1200px;
+  position: relative;
+
+  .content-seccion2 {
+    margin: 0 auto;
+  }
+}

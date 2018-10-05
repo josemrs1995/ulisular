@@ -45,21 +45,36 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
                 e.preventDefault();
                 $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
                 $(this).addClass('active');
-                $('.porquehacemos-content,.quequeremos-content').fadeOut();
-                $('.quehacemos-content').fadeIn();
+                $('.porquehacemos-content,.quequeremos-content').fadeOut(200);
+                setTimeout(() => {
+                    $('.quehacemos-content').fadeIn();
+                }, 200); 
             });
             $('.porquehacemos').click(function (e) { 
                 e.preventDefault();
                 $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
                 $(this).addClass('active'); 
-                $('.quehacemos-content,.quequeremos-content').fadeOut();
-                $('.porquehacemos-content').fadeIn();
+                $('.quehacemos-content,.quequeremos-content').fadeOut(200);
+                setTimeout(() => {
+                    $('.porquehacemos-content').fadeIn();
+                }, 200); 
+                
             });
             $('.quequeremos').click(function (e) { 
                 e.preventDefault();
                 $('.quehacemos,.porquehacemos,.quequeremos').removeClass('active');
                  $(this).addClass('active');
-                $('.quehacemos-content,.porquehacemos-content').fadeOut();
-                $('.quequeremos-content').fadeIn();
+                $('.quehacemos-content,.porquehacemos-content').fadeOut(200);
+                setTimeout(() => {
+                    $('.quequeremos-content').fadeIn();
+                }, 200); 
+                
             });
+
+            setInterval(() => {
+                var contentHeight = $('.nosotros-toggle-container').height();
+                $('.img-nosotros').height(contentHeight);
+            }, 100); 
+           
+
     });

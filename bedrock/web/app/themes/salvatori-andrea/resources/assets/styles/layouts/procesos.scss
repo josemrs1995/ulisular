@@ -23,12 +23,26 @@
     transition: 0.6s;
     border-radius: 5px;
     overflow: hidden;
-    max-width: 480px;
 
-    h5 {
+    p {
+      margin-top: 25px;
+      text-align: justify;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .h5 {
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 20px;
+      text-align: left;
+      letter-spacing: unset;
+      color: black !important;
+      margin-bottom: 0 !important;
+
     }
 
     .img-noticias {
@@ -73,6 +87,7 @@
   .timeline-item {
     position: relative;
     margin-top: 50px;
+    padding: 5%;
 
     .date {
       position: absolute;
@@ -133,7 +148,6 @@
 @media only screen and (max-width: 768px) {
   .timeline-item {
     // padding: 0 10% 0 10% !important;
-    box-shadow: 0 5px 10px rgba(0, 0.1, 0.1, 0.1);
 
     .caja-procesos {
       .img-noticias {

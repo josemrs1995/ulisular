@@ -8,12 +8,13 @@
         <?php $__currentLoopData = array_slice($procesos_loop,0,4); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $procesos): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="column timeline-item is-half  animate fadeInUp">
                 <div class="diamante">
-                    <div class="rombo"></div>
-                </div>
-                <div class="caja-procesos columns is-12 animate fadeInUp">
+                            <div class="rombo"></div>
+                    </div>
+                <div class="caja-procesos columns animate fadeInUp">
                     <div class="img-noticias column is-5" style="background:url('<?php echo e($procesos['thumbnail']); ?>'); background-size:cover;"></div>
-                    <div class="content-procesos column is-7">
-                        <h5 class="titulo"><?php echo e($procesos['title']); ?></h5>
+                    <div class="content-procesos column is-6">
+                        <h5 class="h5"><?php echo e($procesos['title']); ?></h5>
+                        <span><?php echo e(get_field('subtitulo_procesos', '61')); ?></span>
                         <p class="resumen"><?php echo $procesos['resumen']; ?></p>
                     </div>
                 </div>

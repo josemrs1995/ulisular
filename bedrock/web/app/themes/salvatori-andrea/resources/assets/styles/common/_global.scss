@@ -166,7 +166,8 @@ footer {
 
     .contactanos-correo {
       background: white;
-      border-radius: 26px;
+      border-top-left-radius: 26px;
+      border-top-right-radius: 26px;
       position: relative;
       margin-top: 20px;
       padding: 5%;
@@ -302,6 +303,7 @@ footer {
 
     .contactanos-correo {
       margin: 0 auto;
+      border-radius: 26px;
     }
   }
 
