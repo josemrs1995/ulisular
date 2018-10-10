@@ -3,7 +3,7 @@
     <div class="page-header">
         <div class="contenido-page-header">
           <h5 class="page-header-h5">{!! App::title() !!}</h5>
-          <p class="page-header-p">{{ get_field('descripcion_header', 'option')}}</p>
+          <p class="page-header-p">{!! App::excerpt() !!}</p>
         </div>
         <img class="svg-interno" src="@asset('images/svg/vector-3-01.svg')" style="width:100%; height:auto; " >
         </div>

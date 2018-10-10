@@ -77,4 +77,28 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
             }, 100); 
            
 
+            // Aqui va el script para el form del footer
+$("#submitemail").click(function (e) {
+    e.preventDefault();
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var mensaje = $("#mensaje").val();
+    $("#returnmessage").empty(); // To empty previous error/success message.
+    // Checking for blank fields.
+    if (name == '' || email == '' || mensaje == '') {
+      alert("Porfavor llene todos los campos antes de enviar el mensaje");
+    } else {
+      // Returns successful data submission message when the entered information is stored in database.
+      $.post("http://ulisular.ivorystack.com/extras/contact_form.php", {
+        name1: name,
+        email1: email,
+        mensaje1: mensaje,
+      }, function (data) {
+        $("#returnmessage").append(data); // Append returned message to message paragraph.
+        if (data == "Gracias. Estaremos en contacto muy pronto.") {
+          $("#subscription-form")[0].reset(); // To reset form fields on success.
+        }
+      });
+    }
+   });
     });
